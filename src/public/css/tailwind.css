@@ -1,0 +1,300 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './variables.css';
+@import './html.css';
+@import './buttons.css';
+@import './headline.css';
+@import './link.css';
+@import './lists.css';
+@import './measure.css';
+@import './screenshot.css';
+@import './code.css';
+@import './table.css';
+@import './typography.css';
+@import './utils.css';
+/** Core CSS required for ionic components to work property */
+@import "~@ionic/core/css/core.css";
+/** Basic CSS for apps built with Ionic */
+/** Optional CSS utils that can be commented out */
+@import "~@ionic/core/css/padding.css";
+@import "~@ionic/core/css/float-elements.css";
+@import "~@ionic/core/css/text-alignment.css";
+@import "~@ionic/core/css/text-transformation.css";
+@import "~@ionic/core/css/flex-utils.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-search {
+  @apply w-20 h-full;
+  --height:100%;
+  --border-radius: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 0px;
+  position: absolute;
+  right: -2px;
+  z-index: 2;
+}
+
+ion-slide {
+  padding-bottom: 50px !important;
+}
+
+.no-img {
+ @apply relative my-auto h-64 py-20 mx-auto;
+ width:6rem !important;
+}
+
+.on-img {
+  width:16rem !important;
+  margin:auto;
+ }
+ 
+
+.img-slide {
+  @apply text-center mx-auto h-auto bg-no-repeat rounded-lg ;
+  width:100% !important;
+}
+
+.div-text-banner {
+  @apply bg-black flex mx-auto px-4 py-4 rounded-b-lg relative;
+
+}
+
+.p-head-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: #121212;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  --width: 12px !important;
+  --height: 12px !important;
+  background: #121212 !important;
+  --background: #121212 !important;
+  --bullet-background: #121212 !important;
+
+}
+
+.swiper-pagination-bullet-active {
+    width: 12px !important;
+    height: 12px !important;
+    --width: 12px !important;
+    --height: 12px !important;
+}
+
+.p-head-title {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: #121212;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  .search-mobile {
+    @apply w-full h-10 pl-3 pr-2 mb-6 bg-white border rounded-full flex justify-between items-center relative;
+  }
+
+.itemglobal {
+    @apply hidden;
+    width: 100%;
+    border-radius: 8px;
+    margin: auto;
+    border: 1px solid var(--color-woodsmoke);
+    margin-bottom: 5%;
+  }
+  
+.icoSearchglobal {
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--color-woodsmoke);
+  }
+  
+  .inputSearchglobal {
+    font-size: 14px;
+  }
+  
+
+*::selection,
+*::-moz-selection {
+  background: var(--color-whisper);
+}
+
+.p-head-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: #121212;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+ 
+@media screen and (max-width:767px) {
+  .p-head-title {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 0px) {
+  .modalDoaCss {
+    --width: 80%;
+    --height: 90%;
+    margin: auto;
+    --border-radius: 10px;
+  }
+
+  .modalReceiptCss {
+    --width: 80%;
+    --height: 60%;
+    margin: auto;
+    --border-radius: 10px;
+  }
+}
+
+.grid-product {
+  @apply grid grid-cols-1 gap-4;
+}
+
+.title-product {
+  @apply text-gray-900 font-bold leading-normal text-base uppercase;
+}
+
+.no-product {
+  @apply h-56 py-16 w-auto mt-2 mx-auto;
+}
+
+.flex-contact {
+  @apply mx-auto relative;
+}
+
+.img-contact {
+  @apply w-8 mx-auto;
+}
+
+.div-img-desa {
+  @apply mx-auto w-full;
+}
+
+.div-about-img {
+  @apply w-full;
+}
+
+.div-about-desc {
+ @apply w-full my-auto;
+}
+
+@screen sm {
+  .grid-product {
+    @apply grid-cols-2;
+  }
+}
+
+@screen md {
+
+  .slides-ion {
+    @apply w-full mx-auto;
+  }
+
+
+
+  .grid-product {
+    @apply grid-cols-3;
+  }
+
+  .title-product {
+    @apply text-lg;
+  }
+
+  .no-product {
+    @apply py-12;
+  }
+
+  .flex-contact {
+    @apply flex;
+  }
+
+  .img-contact {
+    @apply w-8;
+  }
+
+  .div-img-desa {
+    @apply my-auto w-1/3 pr-6;
+  }
+
+  .div-about-img {
+    @apply flex;
+  }
+
+  .div-about-desc {
+    @apply w-3/4;
+   }
+  
+  
+}
+
+@screen lg {
+  .itemglobal {
+    @apply block;
+  }
+
+  .grid-product {
+    @apply grid-cols-3;
+  }
+
+  .title-product {
+    @apply text-xl;
+  }
+
+  .no-product {
+    margin:auto;
+  }
+
+  .div-about-img {
+    @apply mb-6;
+  }
+  
+}
+
+@screen xl {
+  .grid-product {
+    @apply grid-cols-3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modalDoaCss {
+    --width: 70%;
+    --height: 90%;
+    --border-radius: 10px;
+  }
+
+  .modalReceiptCss {
+    --width: 30%;
+    --height: 80%;
+    --border-radius: 10px;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .img-slide {
+    @apply text-center mx-auto h-64 bg-no-repeat rounded-t-lg ;
+  }
+
+}
+
+

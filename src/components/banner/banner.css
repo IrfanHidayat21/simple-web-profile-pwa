@@ -1,0 +1,143 @@
+
+
+.div-text-banner {
+  margin-top: -8.5rem;
+  opacity: 0.9;
+}
+
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+  white-space: normal;
+
+}
+
+.p-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 26px;
+  text-transform: uppercase;
+  opacity: 1;
+  white-space: normal;
+  line-height: 1.5;
+  cursor: pointer;
+  text-align: left;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+}
+
+.noneSlide {
+  display: none;
+}
+.blockSlide {
+  display: block;
+}
+
+@-webkit-keyframes fade {
+  from {
+
+    opacity: .4;
+
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.route-title a {
+  text-decoration: none;
+}
+
+@media (min-width: 0px) and (max-width: 360px) {
+  .div-text-banner {
+    margin-top: 0rem;
+    opacity: 1;
+  }
+
+  
+  .text {
+    font-size: 7px;
+
+  }
+
+  .p-title {
+    font-size: 9px;
+  }
+
+}
+
+
+@media (min-width: 361px) and (max-width: 499px) {
+  .div-text-banner {
+    margin-top: 0rem;
+    opacity: 1;
+  }
+
+
+  .text {
+    font-size: 9px;
+
+  }
+
+  .p-title {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+
+  .div-text-banner {
+    margin-top: -5.5rem;
+    opacity: 0.9;
+  }
+
+  .text {
+    font-size: 9px;
+
+  }
+
+  .p-title {
+    font-size: 12px;
+  }
+}
+
+
+
+@media (max-width: 1023px) and (min-width: 597px) {
+  .div-text-banner {
+    margin-top: -5.5rem;
+    opacity: 0.9;
+  }
+
+
+  .text {
+    font-size: 10px;
+
+  }
+
+  .p-title {
+    font-size: 14px;
+  }
+}

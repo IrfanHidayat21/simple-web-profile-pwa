@@ -1,0 +1,41 @@
+{
+  "name": "@web-profile/desa",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Web Profile Desa",
+  "scripts": {
+    "build": "stencil build",
+    "build.ci": "npm run site.structure && npm run docs && stencil build --prerender --max-workers=1 --ci --next",
+    "docs": "tsc --p ./scripts && node ./scripts/markdown-to-html && node ./scripts/blog-list",
+    "prerender": "stencil build --prerender",
+    "test": "echo Good",
+    "prerender.dev": "stencil build --dev --prerender",
+    "site.structure": "tsc --p ./scripts && node ./scripts/site-structure",
+    "start": "stencil build --dev --watch --serve",
+    "buildCSS": "postcss src/public/css/tailwind.css -o src/global/style/app.css",
+    "watchCSS": "postcss src/public/css/tailwind.css -o src/global/style/app.css --watch"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@ionic/core": "5.2.0",
+    "@stencil/core": "1.14.0",
+    "@stencil/router": "1.0.1",
+    "autoprefixer": "^9.8.0",
+    "copy-text-to-clipboard": "^2.2.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6",
+    "watch": "^1.0.2",
+    "workbox-build": "4.3.1"
+  },
+  "author": "YUK Team",
+  "license": "YUK",
+  "repository": {
+    "type": "git",
+    "url": "https://nyuciyuk.com"
+  },
+  "bugs": {
+    "url": "https://nyuciyuk.com"
+  },
+  "homepage": "https://stenciljs.com/",
+  "dependencies": {}
+}
